@@ -1,0 +1,1912 @@
+@font-face {
+  font-family: "PF Din Text Cond Pro";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Din Text Cond Pro";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Din Text Cond Pro";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Din Text Cond Pro";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Din Text Cond Pro - Thin";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-thin.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Din Text Cond Pro - Thin Italic";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-thinital.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Din Text Cond Pro - X Black";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-xblack.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Din Text Cond Pro - X Thin";
+  font-display: swap;
+  src: url(../fonts/pfdintextcondpro-xthin.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  outline: none;
+}
+a:visited {
+  outline: none;
+}
+body {
+  line-height: 1.2;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  color: #2f2f2f;
+  font-weight: 300;
+}
+.main_menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.main_menu .main_menu_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/blue_sky.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-color: #fff;
+  z-index: 7;
+  position: absolute;
+}
+.main_menu .close_main_menu_cnt {
+  max-width: 1070px;
+  margin: 0 auto;
+  position: relative;
+}
+.main_menu .close_main_menu {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  cursor: pointer;
+  font-family: "PF Din Text Cond Pro" !important;
+  font-weight: 300 !important;
+  font-size: 59px;
+  color: #004961;
+  z-index: 9999;
+}
+.main_menu .main_menu_cnt {
+  width: 100%;
+  height: 100%;
+  max-width: 1070px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 9;
+}
+.main_menu .main_menu_cnt ul {
+  text-align: center;
+}
+
+.main_menu .main_menu_cnt ul li {
+  margin-bottom: 15px;
+}
+.main_menu .main_menu_cnt ul li:last-of-type {
+  margin-bottom: 0;
+}
+.main_menu .main_menu_cnt ul li a {
+  color: #2f2f2f;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header_inner {
+  border-bottom: 1px solid #eaeaea;
+}
+.header {
+  height: 200px;
+  max-width: 1070px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.header .header_flex_left,
+.header .header_flex_center,
+.header .header_flex_right {
+  width: 33.333333%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.header .header_flex_center {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.header .header_flex_right {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+.header .header_menu_icon {
+  width: 30px;
+  height: 16px;
+  background-image: url(../img/header_menu_icon.png);
+  cursor: pointer;
+  margin-right: 40px;
+  position: relative;
+  top: -30px;
+}
+.header .header_geo {
+  padding-top: 10px;
+}
+.header .header_geo p {
+  color: #004961;
+}
+.header .header_geo p span {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header .header_phone a {
+  font-family: "PF Din Text Cond Pro - Thin";
+  color: #004961;
+  font-size: 27px;
+  text-decoration: none;
+}
+.header .header_phone a span {
+  font-family: "PF Din Text Cond Pro";
+  font-weight: 700;
+}
+.header .header_flex_right {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.header_logo img{
+  max-width: 246px;
+}
+.header .header_call_btn {
+  width: 92px;
+  height: 104px;
+  background-image: url(../img/bg_call_header.png);
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header .header_call_btn span {
+  position: relative;
+  top: -5px;
+}
+.content_container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: -70px;
+}
+.content_container h1 {
+  color: #004961;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.content_container p {
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.content_container h2 {
+  color: #004961;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.content_container h3 {
+  color: #004961;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content_container img {
+  max-width: 100%;
+  height: auto;
+}
+.samolet_bg {
+  width: 100%;
+  height: 1700px;
+  background-image: url(../img/samolet.png);
+  background-repeat: no-repeat;
+  background-position: 50% -40px;
+}
+.first_row {
+  max-width: 1070px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.first_row h1 {
+  color: #6da5ba;
+  font-family: "PF Din Text Cond Pro - X Black";
+  font-size: 85px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.first_row .first_row_flex .first_row_left {
+  width: 50%;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_desc {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  padding-right: 70px;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_desc p {
+  font-family: "PF Din Text Cond Pro - Thin";
+  font-weight: 400;
+  font-size: 27px;
+  color: #004961;
+  max-width: 380px;
+  text-align: right;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_desc p span {
+  font-family: "PF Din Text Cond Pro";
+  font-weight: 500;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_meta {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  max-width: 495px;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_meta .first_row_left_meta_item {
+  width: 50%;
+  margin-bottom: 33px;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_meta .first_row_left_meta_item .first_row_left_meta_item_photo {
+  height: 70px;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_meta .first_row_left_meta_item .first_row_left_meta_item_photo .first_row_left_meta_item_photo_2 {
+  position: relative;
+  top: 7px;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_meta .first_row_left_meta_item .first_row_left_meta_item_photo .first_row_left_meta_item_photo_3 {
+  position: relative;
+  top: 10px;
+}
+.first_row .first_row_flex .first_row_left .first_row_left_meta .first_row_left_meta_item .first_row_left_meta_item_text {
+  margin-top: 6px;
+  color: #002945;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "PF Din Text Cond Pro";
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right {
+  width: 50%;
+  padding-left: 70px;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_desc {
+  padding-top: 10px;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_desc p {
+  color: #004961;
+  font-size: 27px;
+  font-family: "PF Din Text Cond Pro";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_desc p span {
+  display: block;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: none;
+  margin-bottom: 2px;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_txt {
+  margin-top: 22px;
+  max-width: 395px;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_txt p {
+  color: #202c33;
+  font-family: "PF Din Text Cond Pro - Thin Italic";
+  font-size: 17px;
+  font-weight: 400;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form {
+  margin-top: 65px;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text],
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel],
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email],
+.first_row .first_row_flex .first_row_right .first_row_right_form form textarea {
+  max-width: 221px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(42, 47, 50, 0.2);
+  height: 15px;
+  position: relative;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  padding-right: 8px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text]:focus,
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel]:focus,
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email]:focus,
+.first_row .first_row_flex .first_row_right .first_row_right_form form textarea:focus {
+  border-bottom: 1px solid rgba(42, 47, 50, 0.5);
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form textarea {
+  height: 22px;
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form textarea::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form textarea::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form textarea:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form textarea:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text]::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text]::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text]:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text]:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel]::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel]::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel]:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel]:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email]::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email]::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email]:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email]:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after {
+  position: relative;
+  margin-bottom: 34px;
+  max-width: 221px;
+  width: 100%;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background-image: url(../img/input_after.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after_textarea {
+  width: 100%;
+  max-width: 100%;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after_textarea::after {
+  bottom: -3px;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=submit] {
+  width: 149px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-radius: 16px 16px 16px 0;
+  background-color: #004961;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 300;
+  position: relative;
+  background-image: url(../img/submit_bg.png);
+  background-repeat: no-repeat;
+  padding-right: 25px;
+  left: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.first_row .first_row_flex .first_row_right .first_row_right_form form input[type=submit]:hover {
+  left: 5px;
+}
+.our_services {
+  margin-top: 465px;
+}
+.our_services h2 {
+  text-align: center;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 300;
+  color: #004961;
+  text-transform: uppercase;
+}
+.our_services h2 span {
+  display: block;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 7px;
+}
+.our_services .our_services_flex {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.our_services .our_services_item {
+  width: 50%;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: flex;
+}
+.our_services .our_services_item .our_services_item_photo_1 img {
+  position: relative;
+  top: 10px;
+}
+.our_services .our_services_item .our_services_item_photo_2 img {
+  position: relative;
+  top: 6px;
+}
+.our_services .our_services_item .our_services_item_photo_3 img {
+  position: relative;
+  top: 33px;
+}
+.our_services .our_services_item .our_services_item_photo_4 img {
+  position: relative;
+  top: 15px;
+}
+.our_services .our_services_item .our_services_item_text {
+  margin-left: 35px;
+}
+.our_services .our_services_item .our_services_item_text h3 {
+  color: #004961;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.our_services .our_services_item .our_services_item_text ul {
+  list-style: disc;
+  margin-left: 18px;
+}
+.our_services .our_services_item .our_services_item_text ul li {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 3px;
+  max-width: 315px;
+}
+.our_services .our_services_end {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+.priem {
+  width: 100%;
+  height: 66px;
+  background-image: url(../img/priem_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.priem .priem_1070_flex {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+.priem .priem_1070_flex h2 {
+  color: #004961;
+  font-size: 45px;
+  font-weight: 700;
+  position: relative;
+  top: -30px;
+}
+.priem .priem_1070_flex .priem_1070_flex_right p {
+  color: #ffffff;
+  font-family: "PF Din Text Cond Pro - X Thin";
+  font-size: 96px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  top: -22px;
+}
+.priem_1070 {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding-bottom: 53px;
+}
+.priem_1070 .priem_1070_meta {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+.priem_1070 .priem_1070_meta .priem_1070_meta_item {
+  width: 33%;
+  display: -webkit-box;
+  display: flex;
+}
+.priem_1070 .priem_1070_meta .priem_1070_meta_item .priem_1070_meta_item_photo {
+  height: 56px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+.priem_1070 .priem_1070_meta .priem_1070_meta_item .priem_1070_meta_item_txt {
+  margin-left: 20px;
+}
+.priem_1070 .priem_1070_meta .priem_1070_meta_item .priem_1070_meta_item_txt p {
+  max-width: 230px;
+  color: #004961;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka {
+  width: 100%;
+  height: 456px;
+  background-image: url(../img/big_zayavka_bg.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+.big_zayavka .big_zayavka_cnt {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+  height: 367px;
+  padding-top: 50px;
+  box-shadow: 0 0 79px rgba(2, 25, 32, 0.29);
+  background-color: #ffffff;
+}
+.big_zayavka .big_zayavka_cnt h2 {
+  color: #004961;
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.big_zayavka .big_zayavka_cnt .big_zayavka_cnt_form_p {
+  color: #004961;
+  text-align: center;
+  margin-top: 10px;
+}
+.big_zayavka .big_zayavka_cnt form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+  max-width: 705px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+.big_zayavka .big_zayavka_cnt form input[type=text],
+.big_zayavka .big_zayavka_cnt form input[type=tel],
+.big_zayavka .big_zayavka_cnt form input[type=email],
+.big_zayavka .big_zayavka_cnt form textarea {
+  max-width: 221px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(42, 47, 50, 0.2);
+  height: 15px;
+  position: relative;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.big_zayavka .big_zayavka_cnt form input[type=text]:focus,
+.big_zayavka .big_zayavka_cnt form input[type=tel]:focus,
+.big_zayavka .big_zayavka_cnt form input[type=email]:focus,
+.big_zayavka .big_zayavka_cnt form textarea:focus {
+  border-bottom: 1px solid rgba(42, 47, 50, 0.5);
+}
+.big_zayavka .big_zayavka_cnt form textarea {
+  height: 22px;
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.big_zayavka .big_zayavka_cnt form textarea::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form textarea::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form textarea:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form textarea:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=text]::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=text]::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=text]:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=text]:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=tel]::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=tel]::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=tel]:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=tel]:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=email]::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=email]::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=email]:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form input[type=email]:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.big_zayavka .big_zayavka_cnt form .first_row_right_form_inp_after {
+  position: relative;
+  margin-bottom: 34px;
+  max-width: 221px;
+  width: 100%;
+}
+.big_zayavka .big_zayavka_cnt form .first_row_right_form_inp_after::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background-image: url(../img/input_after.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+.big_zayavka .big_zayavka_cnt form .first_row_right_form_inp_after_textarea {
+  margin-left: 20px;
+  max-width: 100%;
+  position: relative;
+  top: -3px;
+}
+.big_zayavka .big_zayavka_cnt form .first_row_right_form_inp_after_textarea::after {
+  bottom: -3px;
+}
+.big_zayavka .big_zayavka_cnt form .two_form_flex {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.big_zayavka .big_zayavka_cnt form .two_form_br {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.big_zayavka .big_zayavka_cnt form input[type=submit] {
+  width: 149px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-radius: 16px 16px 16px 0;
+  background-color: #004961;
+  color: #ffffff;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 300;
+  position: relative;
+  background-image: url(../img/submit_bg.png);
+  background-repeat: no-repeat;
+  padding-right: 25px;
+  left: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.big_zayavka .big_zayavka_cnt form input[type=submit]:hover {
+  left: 5px;
+}
+.brends {
+  margin-top: 120px;
+}
+.brends .brends_1070 {
+  max-width: 1025px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.otzivy {
+  margin-top: 65px;
+}
+.otzivy .otzivy_1070 {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+.otzivy .otzivy_1070 h2 {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 38px;
+}
+.otzivy .otzivy_1070 h2 span {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: #004961;
+}
+.otzivy_1070_line {
+  width: 100%;
+  height: 1px;
+  background-color: #b6c0c3;
+  max-width: 1070px;
+  margin: 0 auto;
+  margin-top: 37px;
+  position: relative;
+}
+.otzivy_1070_line::after {
+  content: '';
+  width: 166px;
+  height: 3px;
+  background-color: #b6c0c3;
+  position: absolute;
+  top: -5px;
+}
+.otzivy_items {
+  display: -webkit-box;
+  display: flex;
+  max-width: 1070px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.who_we_are {
+  max-width: 1070px;
+  margin: 0 auto;
+  margin-top: 63px;
+}
+.who_we_are h2 {
+  color: #004961;
+  font-size: 45px;
+  font-weight: 700;
+}
+.who_we_are_flex {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.who_we_are_flex .who_we_are_item {
+  width: 50%;
+  max-width: 485px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: flex;
+}
+.who_we_are_flex p {
+  position: relative;
+  color: #2a2f32;
+  margin-left: 27px;
+  max-width: 83%;
+}
+.who_we_are_flex p span {
+  color: #6da5ba;
+}
+.who_we_are_flex .who_we_are_item_after {
+  width: 51px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  background-image: url(../img/who_we_are_after.png);
+}
+.who_we_are_flex .who_we_are_item_after span {
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+.who_we_are_imp {
+  color: #004961;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.map_block {
+  max-width: 949px;
+  height: 497px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  background-image: url(../img/map_block_bg.png);
+}
+.footer_cnt {
+  max-width: 1100px;
+  height: 171px;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: relative;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-image: url(../img/footer_meta_bg.png);
+}
+.footer .footer_meta {
+  display: -webkit-box;
+  display: flex;
+  max-width: 910px;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.footer .footer_meta .footer_meta_item .footer_meta_item_title {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer .footer_meta .footer_meta_item .footer_meta_item_txt {
+  color: #ffffff;
+  margin-top: 10px;
+}
+.footer .footer_meta .footer_meta_item .footer_meta_item_txt a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .footer_meta .footer_meta_item .footer_call_btn {
+  width: 92px;
+  height: 104px;
+  background-image: url(../img/bg_call_header.png);
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.footer .footer_meta .footer_meta_item .footer_call_btn span {
+  position: relative;
+  top: -5px;
+}
+.footer_map {
+  width: 100%;
+  height: 340px;
+  position: relative;
+}
+.footer_map_cnt {
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  top: -80px;
+}
+.footer_menu {
+  max-width: 1070px;
+  margin: 0 auto;
+  margin-top: -40px;
+  position: relative;
+  z-index: 9;
+}
+.footer_menu .footer_menu_rel {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.footer_menu ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.footer_menu ul li {
+  margin-right: 15px;
+}
+.footer_menu ul li:last-of-type {
+  margin-right: 0;
+}
+.footer_menu ul li a {
+  color: #052b3a;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.footer_menu ul li a:hover {
+  border-bottom: 1px solid #ccc;
+}
+.footer_menu .footer_logo {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.footer_logo img{
+  max-width: 197px;
+}
+.footer_menu .footer_logo_txt {
+  padding-bottom: 15px;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.footer_menu .footer_logo_txt p {
+  color: #8e989b;
+  font-size: 15px;
+}
+.formObratniyZvonok_respond {
+  border: 1px solid #8aaf83;
+  margin-top: 20px;
+  padding: 10px;
+  display: none;
+}
+.formObratniyZvonok_respond span {
+  color: #8aaf83;
+}
+.formUslugi_respond {
+  display: none;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.formUslugi_respond span {
+  color: #8aaf83;
+}
+.formBig_respond {
+  padding: 10px;
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.formBig_respond span {
+  color: #8aaf83;
+}
+.dialog h2 {
+  font-family: "PF Din Text Cond Pro" !important;
+  font-weight: 500 !important;
+  position: relative;
+  display: inline-block;
+  color: #004961;
+}
+.dialog .close_modal {
+  position: absolute;
+  right: 24px;
+  top: 2px;
+  cursor: pointer;
+  font-family: "PF Din Text Cond Pro" !important;
+  font-weight: 500 !important;
+  font-size: 59px;
+  color: #004961;
+}
+.dialog input[type=text] {
+  max-width: 221px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(42, 47, 50, 0.2);
+  height: 15px;
+  position: relative;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  padding-right: 8px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.dialog input[type=text]:focus {
+  border-bottom: 1px solid rgba(42, 47, 50, 0.5);
+}
+input[type=text]::-webkit-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+input[type=text]::-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+input[type=text]:-ms-input-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+input[type=text]:-moz-placeholder {
+  color: #2a2f32;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.modal_ob_inp {
+  max-width: 221px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+.modal_ob_inp::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background-image: url(../img/input_after.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+.dialog__content form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.dialog__content input[type=submit] {
+  width: 149px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-radius: 16px 16px 16px 0;
+  background-color: #004961;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 17px;
+  font-weight: 300;
+  position: relative;
+  background-image: url(../img/submit_bg.png);
+  background-repeat: no-repeat;
+  padding-right: 25px;
+  left: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.menedg {
+  margin-top: 35px;
+}
+.dialog {
+  z-index: 999;
+}
+
+@media only screen and (max-width: 1450px) {
+  input[type=text], input[type=email], input[type=tel] {
+    height: auto !important;
+}
+}
+@media only screen and (max-width: 1060px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header,
+  .first_row,
+  .priem .priem_1070_flex,
+  .priem_1070,
+  .brends_1070,
+  .otzivy_items,
+  .who_we_are,
+  .main_menu .close_main_menu_cnt,
+  .content_container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .header_inner {
+    padding-bottom: 40px;
+  }
+  .main_menu .close_main_menu {
+    left: 3%;
+  }
+  .main_menu .main_menu_bg {
+    background-position: 50% 0%;
+  }
+  .priem {
+    margin-top: 50px;
+  }
+  .first_row h1 {
+    text-align: center;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after {
+    max-width: 190px;
+  }
+  .big_zayavka .big_zayavka_cnt {
+    top: 0;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=submit] {
+    margin-top: -25px;
+  }
+  .samolet_bg {
+    background-position: 50% 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .otzivy_items {
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .map_block {
+    background-size: contain;
+  }
+  .header .header_menu_icon {
+    display: none;
+  }
+  .header_logo img {
+    max-width: 80%;
+  }
+  .header_logo {
+    text-align: center;
+  }
+  .header .header_geo p {
+    font-size: 15px;
+  }
+  .header .header_phone a {
+    font-size: 18px;
+  }
+  .header .header_call_btn {
+    width: 80px;
+    height: 90px;
+    background-size: contain;
+  }
+  .samolet_bg {
+    background-position: 50% 200px;
+    height: auto;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=submit] {
+    margin-top: 10px;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after,
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text],
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel],
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email],
+  .first_row .first_row_flex .first_row_right .first_row_right_form form textarea {
+    max-width: 100%;
+  }
+  .our_services .our_services_item .our_services_item_text {
+    margin-left: 25px;
+  }
+  .priem .priem_1070_flex .priem_1070_flex_right p {
+    font-size: 75px;
+    top: -10px;
+  }
+  .first_row h1 {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+  .priem_1070 .priem_1070_meta {
+    flex-wrap: wrap;
+  }
+  .priem_1070 .priem_1070_meta .priem_1070_meta_item {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .priem_1070 {
+    padding-bottom: 3px;
+  }
+  .brends_item img {
+    max-width: 80%;
+  }
+  .brends_item {
+    text-align: center;
+  }
+  .who_we_are_flex .who_we_are_item_after {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .who_we_are_flex .who_we_are_item_after span {
+    position: relative;
+    top: -11px;
+    left: 2px;
+  }
+  .footer {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media only screen and (max-width: 767px) {
+
+  .first_row .first_row_flex .first_row_right .first_row_right_txt p{
+    background-color: rgba(255,255,255,0.8);
+    padding: 15px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+  }
+
+  .dialog__content {
+    padding: 2em !important;
+  }
+  .content_container h1 {
+    font-size: 30px;
+  }
+  .content_container h2 {
+    font-size: 25px;
+  }
+  .content_container h3 {
+    font-size: 20px;
+  }
+  .menu_mob_cnt {
+    width: 100%;
+    height: 50px;
+    background-color: #004961;
+    position: fixed;
+    z-index: 9999999;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .menu_mob_cnt .menu_mob_cnt_bnt,
+  .menu_mob_cnt .menu_mob_cnt_bnt_close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: contain;
+    background-image: url(../img/menu_open.png);
+  }
+  .menu_mob_cnt .menu_mob_cnt_bnt_close {
+    display: none;
+  }
+  .main_menu .close_main_menu {
+    right: 25px;
+    left: auto;
+    top: -5px;
+  }
+  .main_menu .main_menu_bg {
+    background-image: url(../img/blue_sky.png);
+    background-size: cover;
+    background-position: 5% 50%;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel] {
+    height: auto !important;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after::after {
+    bottom: -3px;
+  }
+  .big_zayavka .big_zayavka_cnt form .first_row_right_form_inp_after::after {
+    bottom: -3px;
+  }
+  .first_row h1 {
+    font-size: 40px;
+  }
+  .footer .footer_meta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .footer_menu ul {
+    flex-wrap: wrap;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding-top: 75px;
+  }
+  .first_row_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .header_logo img {
+    max-width: 100%;
+  }
+  .header_logo {
+    display: none;
+  }
+  .header_flex_right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .header .header_flex_left,
+  .header .header_flex_center,
+  .header .header_flex_right {
+    width: 100%;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .header .header_call_btn {
+    margin-left: 30px;
+  }
+  .header .header_flex_right {
+    -webkit-box-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  .header .header_call_btn {
+    width: 70px;
+    height: 85px;
+  }
+  .header .header_flex_center {
+    display: none;
+  }
+  .first_row .first_row_flex .first_row_left {
+    width: 100%;
+  }
+  .first_row .first_row_flex .first_row_left .first_row_left_desc {
+    padding-right: 0;
+  }
+  .header .header_call_btn {
+    display: none;
+  }
+  .header .header_flex_right {
+    margin-top: 20px;
+  }
+  .header {
+    height: auto;
+  }
+  .header .header_phone a {
+    font-size: 23px;
+  }
+  .samolet_bg {
+    background-position: 57% -120px;
+    background-image: url(../img/samolet_sky.png);
+  }
+  .first_row .first_row_flex .first_row_right {
+    width: 100%;
+    padding-left: 0;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=submit] {
+    margin: 0 auto;
+  }
+  .our_services {
+    margin-top: 70px;
+  }
+  .first_row .first_row_flex .first_row_left .first_row_left_desc {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .first_row .first_row_flex .first_row_left .first_row_left_desc p {
+    text-align: center;
+    font-size: 20px;
+  }
+  .first_row h1 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .first_row_left_meta_item_text p {
+    font-size: 14px;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_desc {
+    text-align: center;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_txt p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .first_row_left_meta_item_text p {
+    font-weight: 400;
+  }
+  .first_row .first_row_flex .first_row_left .first_row_left_meta .first_row_left_meta_item .first_row_left_meta_item_photo {
+    text-align: center;
+  }
+  .first_row_left_meta_item_text {
+    text-align: center;
+  }
+  .first_row .first_row_flex .first_row_left .first_row_left_meta .first_row_left_meta_item .first_row_left_meta_item_text {
+    margin-top: 15px;
+  }
+  .first_row_right {
+    margin-top: 40px;
+  }
+  .our_services .our_services_item {
+    width: 100%;
+  }
+  .priem_1070_flex_right {
+    display: none;
+  }
+  .priem .priem_1070_flex h2 {
+    font-size: 35px;
+    top: 9px;
+  }
+  .priem_1070 .priem_1070_meta .priem_1070_meta_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .priem_1070 .priem_1070_meta .priem_1070_meta_item .priem_1070_meta_item_txt {
+    margin-left: 0;
+  }
+  .priem_1070_meta_item_photo {
+    text-align: center;
+  }
+  .priem_1070 .priem_1070_meta .priem_1070_meta_item {
+    text-align: center;
+  }
+  .priem_1070_meta_item_photo img {
+    margin: 0 auto;
+  }
+  .priem_1070_meta_item_txt {
+    margin-top: 15px;
+  }
+  .priem_1070 .priem_1070_meta {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .big_zayavka .big_zayavka_cnt h2 {
+    font-size: 23px;
+  }
+  .big_zayavka .big_zayavka_cnt {
+    height: auto;
+  }
+  .big_zayavka .big_zayavka_cnt form .two_form_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .big_zayavka .big_zayavka_cnt form {
+    -webkit-box-pack: center;
+            justify-content: center;
+    padding-bottom: 35px;
+  }
+  .big_zayavka .big_zayavka_cnt form .first_row_right_form_inp_after_textarea {
+    margin-left: 0;
+    max-width: 221px;
+  }
+  .big_zayavka .big_zayavka_cnt {
+    margin-top: 40px;
+    top: 120px;
+  }
+  .brends {
+    margin-top: 150px;
+  }
+  .brends_item {
+    width: 33%;
+    margin-top: 25px;
+  }
+  .brends_1070 {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .brends .brends_1070 {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .big_zayavka .big_zayavka_cnt {
+    box-shadow: none;
+    border-bottom: 1px solid #b6c0c3;
+  }
+  .otzivy_item {
+    margin-bottom: 25px;
+    width: 33%;
+    text-align: center;
+  }
+  .otzivy_item img {
+    max-width: 70%;
+  }
+  .otzivy_items::after {
+    content: '';
+    width: 33%;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form .first_row_right_form_inp_after,
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=text],
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=tel],
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=email],
+  .first_row .first_row_flex .first_row_right .first_row_right_form form textarea {
+    max-width: 221px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .who_we_are h2 {
+    text-align: center;
+  }
+  .who_we_are_flex .who_we_are_item {
+    width: 100%;
+  }
+  .who_we_are_flex p {
+    max-width: 75%;
+  }
+  .who_we_are_flex .who_we_are_item_after span {
+    position: relative;
+    top: -5px;
+    left: 4px;
+  }
+  .who_we_are_flex .who_we_are_item {
+    margin-bottom: 25px;
+  }
+  .map_block {
+    display: none;
+  }
+  .footer_map {
+    display: none;
+  }
+  .otzivy .otzivy_1070 h2 span,
+  .who_we_are h2 {
+    font-size: 35px;
+  }
+  .footer .footer_meta .footer_meta_item .footer_meta_item_title {
+    font-size: 20px;
+  }
+  .footer {
+    position: static;
+  }
+  .footer_cnt {
+    height: auto;
+  }
+  .footer {
+    background-size: cover;
+  }
+  .footer .footer_meta {
+    text-align: center;
+  }
+  .footer_meta_item {
+    margin-bottom: 25px;
+  }
+  .footer .footer_meta .footer_meta_item .footer_call_btn {
+    margin: 0 auto;
+    width: 75px;
+    height: 90px;
+    background-size: contain;
+  }
+  .footer_menu {
+    margin-top: 40px;
+  }
+  .footer_menu ul li {
+    margin-bottom: 10px;
+  }
+  .footer_menu ul li {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .priem_1070 .priem_1070_meta .priem_1070_meta_item .priem_1070_meta_item_txt p {
+    font-size: 15px;
+  }
+  .our_services .our_services_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .our_services .our_services_item .our_services_item_text {
+    margin-left: 0;
+  }
+  .our_services .our_services_item .our_services_item_photo_1 img {
+    top: 0;
+  }
+  .our_services_item_text {
+    margin-top: 25px;
+  }
+  .our_services .our_services_item .our_services_item_photo_3 img {
+    top: 0;
+  }
+  .our_services .our_services_item .our_services_item_text h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form {
+    position: relative;
+  }
+  .first_row .first_row_flex .first_row_right .first_row_right_form form input[type=submit] {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .our_services {
+    margin-top: 90px;
+  }
+  .our_services .our_services_item .our_services_item_photo_4 img {
+    top: 0;
+  }
+  .footer_cnt {
+    margin-top: 15px;
+  }
+}
